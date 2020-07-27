@@ -1,0 +1,16 @@
+server:
+  port: 8070
+  servlet:
+    context-path: /news-service
+
+spring:
+  application:
+    name: news-service
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/orcl
+    username: hr
+    password: hr
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
